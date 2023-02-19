@@ -1,0 +1,20 @@
+{
+  "include": [
+    "./src/**/*" // **表示任意目录，*表示任意文件
+  ],
+  "exclude": [],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "outDir": "./dist", //设置输出目录
+    "allowJs": false, //是否对js文件进行编译
+    "checkJs": false, //是否检查js代码是否合法
+    "noEmitOnError": true, //发生错误的时候不要生成编译后的文件
+    /*严格模式*/
+    "strict": true, //严格模式的总开关，打开后会开启所有的严格模式
+    "alwaysStrict": true, //编译后的js文件使用严格模式
+    "noImplicitAny": true, //不允许隐式的any类型
+    "noImplicitThis": true, //不允许隐式的this
+    "strictNullChecks": true, //严格检查可能为null的值从而防止对null的引用
+  }
+}

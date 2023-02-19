@@ -1,0 +1,45 @@
+body
+{
+    /* 背景图片 */
+    background-image: url(./mmexport1629353077059.jpg);
+    /* 边框颜色 */
+    border-color: black;
+    /* 边框样式 */
+    border-style:double;
+    /* 边框宽度 */
+    border-width: 10px;
+    /* 透明度 */
+    opacity: 0.8;
+}
+
+/* 第一个盒子, 放静夜思 */
+.box
+{
+    padding: 5em;
+    background-color: #bfa;
+    color: black;
+}
+
+.box>h1
+{
+    font-size: 24px;
+
+    /* 外边距,内边距,边框 */
+    margin: 0em;
+    padding: 0px;
+    border-width: 0px;
+
+}
+.box>p
+{
+    /* 外边距,内边距,边框 */
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+
+    font-size: 20px;
+}
+.box>p:first-of-type
+{
+    font-size: 15px;
+}
