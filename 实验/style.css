@@ -5,26 +5,26 @@
 }
 
 #box {
-    position: relative;
     margin-top: 2em;
     width: 100%;
-}
-
-#left-box {
-    position: absolute;
-    background-color: #bfa;
-    left: 0;
-}
-
-#right-box {
-    position: absolute;
-    background-color: green;
-    right: 0;
+    position: relative;
 }
 
 #box>div {
     height: 20em;
     width: 10em;
+}
+
+#left-box {
+    background-color: #bfa;
+    position: absolute;
+    left: 0;
+}
+
+#right-box {
+    background-color: green;
+    position: absolute;
+    right: 0;
 }
 
 #bottom-box {
@@ -33,8 +33,6 @@
     background-color: purple;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
+.clearfix {
     clear: both;
 }
