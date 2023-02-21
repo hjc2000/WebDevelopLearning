@@ -3,3 +3,38 @@
     margin: 0;
     padding: 0;
 }
+
+#box {
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+}
+
+#left-box {
+    position: absolute;
+    background-color: #bfa;
+    left: 0;
+}
+
+#right-box {
+    position: absolute;
+    background-color: green;
+    right: 0;
+}
+
+#box>div {
+    height: 20em;
+    width: 10em;
+}
+
+#bottom-box {
+    height: 10em;
+    width: 100%;
+    background-color: purple;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
