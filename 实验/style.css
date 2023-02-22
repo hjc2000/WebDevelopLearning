@@ -5,34 +5,21 @@
 }
 
 #box {
-    margin-top: 2em;
-    width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: red;
+    border-style: solid;
 }
 
 #box>div {
-    height: 20em;
-    width: 10em;
+    height: 100px;
 }
 
-#left-box {
-    background-color: #bfa;
-    position: absolute;
-    left: 0;
+/* 交替设置 box 子元素的颜色 */
+#box>div:nth-of-type(2n) {
+    background-color: pink;
 }
 
-#right-box {
+#box>div:nth-of-type(2n+1) {
     background-color: green;
-    position: absolute;
-    right: 0;
-}
-
-#bottom-box {
-    height: 10em;
-    width: 100%;
-    background-color: purple;
-}
-
-.clearfix {
-    clear: both;
 }
