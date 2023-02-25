@@ -5,21 +5,17 @@
 }
 
 #box {
-    display: flex;
-    flex-direction: column;
-    border-color: red;
+    position: relative;
+    width: fit-content;
+}
+
+#block {
+    width: 0.5em;
+    height: 0.5em;
+    border-color: black;
     border-style: solid;
-}
-
-#box>div {
-    height: 100px;
-}
-
-/* 交替设置 box 子元素的颜色 */
-#box>div:nth-of-type(2n) {
-    background-color: pink;
-}
-
-#box>div:nth-of-type(2n+1) {
-    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
 }
