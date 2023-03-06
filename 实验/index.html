@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="Shortcut Icon" href="./icon.png" type="image/png" />
 </head>
 
 <body>
-    <div id="box">
-        <select>
-            <option>1121313</option>
-            <option>1121313</option>
-            <option>1121313</option>
-            <option>1121313</option>
-        </select>
-        <div id="block"></div>
-    </div>
+    <form action="/data" method="post" class="form-example">
+        <div class="form-example">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Subscribe!">
+        </div>
+    </form>
 </body>
 
 </html>

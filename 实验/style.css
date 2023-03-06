@@ -3,19 +3,3 @@
     margin: 0;
     padding: 0;
 }
-
-#box {
-    position: relative;
-    width: fit-content;
-}
-
-#block {
-    width: 0.5em;
-    height: 0.5em;
-    border-color: black;
-    border-style: solid;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(45deg);
-}
