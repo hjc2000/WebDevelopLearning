@@ -1,0 +1,28 @@
+<!-- saved from url=(0020)http://192.168.1.15/ -->
+<html>
+<script id="allow-copy_script">
+	(function t() 
+	{
+		var t = !1; document.addEventListener("allow_copy", (function (e)
+		{
+			t = e.detail.unlock
+		}));
+		var e = ["copy", "cut", "contextmenu", "selectstart", "mousedown", "mouseup", "mousemove", "keydown", "keypress", "keyup"],
+			n = function (e)
+			{
+				t && (e.stopPropagation(), e.stopImmediatePropagation && e.stopImmediatePropagation())
+			};
+		e.forEach((function (t) { document.documentElement.addEventListener(t, n, { capture: !0 }) }))
+	})()
+</script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>SATLINK Modulator</title>
+</head>
+<frameset cols="20%,*" frameborder="1" border="3">
+	<frame src="./SATLINK_Modulator_files/MenuList.html" name="left" srolling="no" noresize="">
+		<frame src="./SATLINK_Modulator_files/SystemInfo.html" name="right" srolling="no" noresize="">
+</frameset>
+
+</html>

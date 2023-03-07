@@ -1,0 +1,55 @@
+<!-- saved from url=(0032)http://192.168.1.15/MenuList.htm -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Modulator</title>
+  <link rel="stylesheet" type="text/css" href="./MyStyle.css">
+</head>
+
+<body bgcolor="#FF00FF" style="font-family:&#39;Arial&#39;">
+  <img id="id_logo" src="./PVI_LOGO.png" height="60">
+  <hr>
+  <ul>
+    <li><a href="http://192.168.1.15/MainInfo.htm" target="right">Main Info</a></li>
+    <li><a href="http://192.168.1.15/ChannelSetup.htm" target="right" id="id_ChannelSetup">Channel Setup</a></li>
+    <li><a href="http://192.168.1.15/Mod_DVB_T.htm" target="right" id="id_Modulation">Modulation Options</a></li>
+    <li><a href="http://192.168.1.15/AdvSettings.htm" target="right">Advanced Settings</a></li>
+    <li><a href="http://192.168.1.15/GeneralSetup.htm" target="right">General Setup</a></li>
+    <li><a href="http://192.168.1.15/HelpInfo.htm" target="right">Help &amp; Info</a></li>
+  </ul>
+  <script>
+    var mode = "DVB-T";
+    var act = document.getElementById("id_Modulation");
+    switch (mode)
+    {
+      case "DVB-T":
+        act.href = "Mod_DVB_T.htm";
+        break;
+      case "DVB-C":
+        act.href = "Mod_DVB_C.htm";
+        break;
+      case "ATSC-T":
+      case "ATSC-Air":
+      case "USA Air ATSC":
+        act.href = "Mod_ATSC_T.htm";
+        break;
+      case "ATSC-C":
+      case "ATSC-Cable":
+      case "USA Cable J.83B":
+      case "USA Cable J83.B":
+      case "USA Cable J83B":
+        act.href = "Mod_ATSC_C.htm";
+        break;
+      case "DTMB":
+        act.href = "Mod_DTMB.htm";
+        break;
+      case "ISDB-T":
+        act.href = "Mod_ISDB_T.htm";
+        break;
+    }  
+  </script>
+
+</body>
+
+</html>

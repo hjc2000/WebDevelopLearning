@@ -1,0 +1,51 @@
+<!-- saved from url=(0032)http://192.168.1.15/MenuList.htm -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>SATLINK Modulator</title>
+</head>
+
+<body bgcolor="#00ccff" style="font-family:&#39;Arial&#39;">
+  <h1>
+    <font color="#FF0000">ATSC-Cable</font> Modulation
+  </h1>
+  <hr>
+  <p><a href="http://192.168.1.15/SystemInfo.htm" target="right">System Information</a></p>
+  <p><a href="http://192.168.1.15/ModeSetup.htm" target="right">Modulator Setup</a></p>
+  <p><a href="http://192.168.1.15/RFSetup_ATSC_C.htm" target="right" id="id_mode">Modulation</a></p>
+  <p><a href="http://192.168.1.15/StreamSetup.htm" target="right">Transport Stream</a></p>
+  <p><a href="http://192.168.1.15/NitSetup.htm" target="right">NIT Setup</a></p>
+  <p><a href="http://192.168.1.15/IPSetup.htm" target="right">Ethernet / IP</a></p>
+  <p><a href="http://192.168.1.15/FactoryReset.htm" target="right">Factory Reset</a></p>
+
+  <script>
+    var mode = "ATSC-Cable";
+    var act = document.getElementById("id_mode");
+    switch (mode)
+    {
+      case "DVB-T":
+        act.href = "RFSetup_DVB_T.htm";
+        break;
+      case "DVB-C":
+        act.href = "RFSetup_DVB_C.htm";
+        break;
+      case "ATSC-T":
+      case "ATSC-Air":
+        act.href = "RFSetup_ATSC_T.htm";
+        break;
+      case "ATSC-C":
+      case "ATSC-Cable":
+        act.href = "RFSetup_ATSC_C.htm";
+        break;
+      case "DTMB":
+        act.href = "RFSetup_DTMB.htm";
+        break;
+      case "ISDB-T":
+        act.href = "RFSetup_ISDB_T.htm";
+        break;
+    }
+  </script>
+</body>
+
+</html>
